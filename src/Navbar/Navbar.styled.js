@@ -17,3 +17,18 @@ export const StyledText = styled(Link)`
   font-family: PoppinBold;
   text-decoration: none;
 `;
+
+export const ButtonContainer = styled.div`
+  @media (max-width: 991px) {
+    display: none;
+  }
+`;
+
+export const MobileView = styled.div`
+  display: none;
+  padding: 8px;
+
+  @media (max-width: 991px) {
+    display: block;
+  }
+`;
