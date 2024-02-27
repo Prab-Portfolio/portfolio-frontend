@@ -13,8 +13,10 @@ import {
 } from "./Navbar.styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { useNavigate } from "react-router";
 
 export function Navbar() {
+  const navigate = useNavigate();
   return (
     <>
       <Section>
@@ -27,7 +29,7 @@ export function Navbar() {
               </MobileView>
               <ButtonContainer>
                 <LinkText to="/about">CONTACT</LinkText>
-                <Button>Project</Button>
+                <Button onClick={() => navigate("/project")}>Project</Button>
                 <LinkText to="/about">ABOUT</LinkText>
                 <LinkAncorText
                   href="https://github.com/prab002"
